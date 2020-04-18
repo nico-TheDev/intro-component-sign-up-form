@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__left">
+        <h1 class="header__title u-marbot-2">Learn to code by watching others</h1>
+        <p class="header__sub">See how experienced developers solve problems in real-time. 
+          Watching scripted tutorials is great,but understanding how developers think is invaluable.
+        </p>
+      </div>
+
+      <div class="header__right">
+        <a href="#" class="btn u-marbot-1"> <b> Try it free 7 days</b> then $20/mo. thereafter</a>
+
+        <form action="" class="header__form" autocomplete="off">
+          <div class="header__input-group">
+            <input type="text" class="header__input" id="name" placeholder="First Name" required>
+            <label for="name" class="header__label">First name cannot be empty</label>
+            <img src="./images/icon-error.svg" alt="error icon" class="header__warning">
+          </div>
+          <div class="header__input-group">
+            <input type="text" class="header__input" id="name2" placeholder="Last Name" required>
+            <label for="name2" class="header__label">Last name cannot be empty</label>
+            <img src="./images/icon-error.svg" alt="error icon" class="header__warning">
+          </div>
+          <div class="header__input-group">
+            <input type="email" class="header__input" id="email" placeholder="Email Address" required>
+            <label for="email" class="header__label">Looks like this is not an email</label>
+            <img src="./images/icon-error.svg" alt="error icon" class="header__warning">
+          </div>
+          <div class="header__input-group">
+            <input type="password" class="header__input" id="password" placeholder="Password"required>
+            <label for="password" class="header__label">Password cannot be empty</label>
+            <img src="./images/icon-error.svg" alt="error icon" class="header__warning">
+          </div>
+
+          <button type="submit" class="header__submit btn u-marbot-1">Claim your free trial</button>
+          <p class="header__desc">By clicking the button, you are agreeing to our <span class="colored-text">Terms and Services</span></p>
+        </form>
+      </div>
+    </div>
+  </header>
+ 
+
+</body>
+</html>
