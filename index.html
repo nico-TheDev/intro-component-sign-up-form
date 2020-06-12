@@ -9,6 +9,7 @@
   <title>Frontend Mentor | Intro component with sign up form</title>
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
   <header class="header">
@@ -25,23 +26,23 @@
 
         <form action="" class="header__form" autocomplete="off">
           <div class="header__input-group">
-            <input type="text" class="header__input" id="name" placeholder="First Name" required>
+            <input type="text" class="header__input" name="firstName" id="name" placeholder="First Name" >
             <label for="name" class="header__label">First name cannot be empty</label>
             <img src="./images/icon-error.svg" alt="error icon" class="header__warning">
           </div>
           <div class="header__input-group">
-            <input type="text" class="header__input" id="name2" placeholder="Last Name" required>
+            <input type="text" class="header__input" name="lastName" id="name2" placeholder="Last Name" >
             <label for="name2" class="header__label">Last name cannot be empty</label>
             <img src="./images/icon-error.svg" alt="error icon" class="header__warning">
           </div>
           <div class="header__input-group">
-            <input type="email" class="header__input" id="email" placeholder="Email Address" required>
+            <input type="email" class="header__input" name="email" id="email" placeholder="Email Address" >
             <label for="email" class="header__label">Looks like this is not an email</label>
             <img src="./images/icon-error.svg" alt="error icon" class="header__warning">
           </div>
           <div class="header__input-group">
-            <input type="password" class="header__input" id="password" placeholder="Password"required>
-            <label for="password" class="header__label">Password cannot be empty</label>
+            <input type="password" class="header__input" name="password" id="password" placeholder="Password">
+            <label for="password" class="header__label">Password must be 8 to 20 characters long</label>
             <img src="./images/icon-error.svg" alt="error icon" class="header__warning">
           </div>
 
